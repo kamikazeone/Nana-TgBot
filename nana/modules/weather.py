@@ -10,17 +10,17 @@ __HELP__ = """
 Get current weather in your location
 
 ──「 **Weather** 」──
--> `wttr (location)`
+-> `cuaca (location)`
 Get current weather in your location.
 Powered by `wttr.in`
 """
 
 # TODO: Add more custom args?
 
-@app.on_message(Filters.user("self") & Filters.command(["wttr"], Command))
-async def wttr(client, message):
+@app.on_message(Filters.user("self") & Filters.command(["cuaca"], Command))
+async def cuaca(client, message):
 	if len(message.text.split()) == 1:
-		await message.edit("Usage: `wttr jakarta`")
+		await message.edit("Usage: `cuaca jakarta`")
 		return
 	location = message.text.split(None, 1)[1]
 	h = {'user-agent': 'httpie'}
