@@ -90,5 +90,5 @@ async def kang_stickers(client, message):
 	await client.read_history("@Stickers")
 	time.sleep(1)
 	await client.send_message("@Stickers", "/done")
-	await message.edit("**Sticker added!**\nYour sticker has been saved on [This sticker pack](https://t.me/addstickers/{})".format(sticker_pack))
+	await message.edit("**Sticker Ditambahkan**\nSticker Sudah di Cury ヤンチュク)".format(sticker_pack))
 	await client.read_history("@Stickers")
